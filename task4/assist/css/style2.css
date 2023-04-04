@@ -352,8 +352,9 @@ padding: 0 16px ;
 .contain .cards .card .c-info .detail p span{
 
    color: #000000;
-
-
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
 }
 .contain .cards .card button{
     margin-top: 14px;

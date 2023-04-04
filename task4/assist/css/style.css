@@ -373,10 +373,16 @@ padding-right: 2px;
    
 }
 .contain .cards .card .c-info .status span{
+
 font-style: normal;
 font-weight: 400;
-font-size: 8px;
-color: #938C8C;
+font-size: 12px;
+line-height: 16px;
+
+
+color: #000000;
+
+
 
 
 
@@ -384,9 +390,22 @@ color: #938C8C;
 }
 .contain .cards .card .c-info .status .s1{
     margin-left:  120px;
+
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 19px;
+color: #938C8C;
+
+
 }
 .contain .cards .card .c-info .status .s2{
     padding-left: 6px;
+    font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 19px;
+color: #938C8C;
 }
 
 .contain .cards .card button{

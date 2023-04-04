@@ -1,0 +1,530 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+
+}
+
+nav{
+    display: flex;
+    position: fixed;
+    flex-wrap: wrap;
+    top: 0;
+    right: 0;
+    align-items: center;
+    width: 100%;
+    height: 48px;
+    padding: 12px 32px 12px 30px;
+   background: #FFFFFF;
+   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+   z-index: 1;
+   margin-bottom:44px;
+   width: 100%;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    margin-left: 298px;
+    padding-top: 4px;
+}
+nav ul li{
+    margin: 0 16px;
+    position: relative;
+}
+ nav ul li a{
+    text-decoration: none;
+    font-family: 'Montserrat';
+    margin: auto;
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: #938C8C;
+ }
+ nav ul li a:hover{
+    color: #282828;
+    
+ }
+
+ nav ul li a .arow{
+    margin:0 0  0 4px ;
+ }
+ nav ul li:hover .arow{
+    transform: scale(-1);
+    margin:0 4px 0 0 ;
+ }
+
+ nav ul li  .jop {
+    position: absolute;
+    left: -72px;
+    top: 30px ;
+    background: rgba(40, 40, 40, 1);
+    height: 44px;
+    border-radius: 8px;
+    padding: 12px 32px 12px 32px;
+    width: max-content;
+    margin-left: 0;
+    display: none;
+   
+}
+nav ul li .arow2{
+    position: absolute;
+    left: 6px;
+    top: 17px;
+    display: none;
+    
+}
+nav ul li .jop li{
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #938C8C;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    padding: 0 16px;
+   
+
+}
+nav ul li .jop li:hover a{
+    color: #FF8500;
+    border-bottom: 1px solid #FF8500;
+
+}
+nav ul li:hover > .jop{
+   display: flex;
+   transition-delay: 1s;
+   
+}
+nav ul li:hover > .arow2{
+    display: block;
+    
+ }
+nav .log{
+    padding-left:64px ;
+}
+
+nav .log a{
+  text-decoration: none;
+  padding-right: 32px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;;
+  color: #282828;
+
+
+}
+nav .log a:hover{
+
+   font-weight: 700;
+}
+
+nav .lan{
+    padding-top: 4px;
+    padding-left: 47px;
+    display: flex;
+}
+nav .lan a{
+text-decoration: none;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 24px;
+color: #C5BCB3;
+
+
+}
+nav .lan p{
+    font-weight: 400;
+font-size: 12px;
+line-height: 24px;
+color:#FF8500 ;
+}
+
+nav .lan a:hover{
+    color:#FF8500 ;
+}
+
+.contain{
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+    justify-content: center;
+
+    background-image: url(../img/backimg.png) ;
+    background-repeat: no-repeat;
+    background-size:cover;
+
+
+}
+
+.find{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 100px;
+
+}
+.find h1{
+ 
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 29px;
+   color: #000000;
+   padding-bottom: 18px;
+}
+
+
+
+.find button{
+    width: 180px;
+    height: 32px;
+    margin-top: 18px;
+    border: none;
+    color: white;
+    background-color: black;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contain .find .p p{
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+text-align: center;
+color: #000000;
+
+}
+
+.contain .find .search-box{
+    padding-top: 30px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    width: 600px ;
+    height: 65px;
+
+}
+
+.contain .search-box .input{
+    width: 100% ;
+    height: 24px;
+    display: block;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    background: none;
+   
+     font-family: Montserrat;
+     font-size: 16px;
+     font-weight: 400;
+     color: #938C8C;
+     cursor: pointer;
+    
+
+}
+.search-box .search2 img{
+
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    
+    border: none;
+    cursor: pointer;
+    
+}
+.search-box .search1 img{
+
+    position: absolute;
+    top: 50%;
+    right: 44px;
+    
+    border: none;
+    cursor: pointer;
+    
+}
+
+.find .type{
+    margin-top: 32px;
+    
+}
+.find .type ul{
+    list-style: none;
+    display: inline-flex;
+
+}
+.find .type ul li{
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+padding: 0 16px ;
+
+
+}
+.find .type ul li a{
+        
+        text-decoration: none;
+        color: #938C8C;
+}
+.find .type ul li:hover a{
+    color: #FF8500;
+}
+
+.contain .cards{
+    margin-top: 33px;
+    display: flex;
+    align-items: center;
+     width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 69px;
+   
+}
+
+.contain .cards .card{
+    height: 272px;
+    width: 305px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 1);
+    padding: 18px 32px 18px 32px;
+    box-shadow: 0px 4px 20px 0px rgba(40, 40, 40, 0.15);
+    margin: 0 50px;
+    margin-bottom: 70px;
+
+
+}
+.contain .cards .card .head{
+    display: flex;
+    height: 36px;
+    align-items: flex-end;
+     width: 100%;
+}
+.contain .cards .card .head img{
+    height: 36px;
+    width: 36px;
+    padding-right: 8px;
+}
+
+
+.contain .cards .card .head .arthur{
+    height: 24px;
+   font-family: Montserrat;
+     font-size: 10px;
+        font-weight: 500;
+        align-items: center;
+       
+}
+
+.contain .cards .card .c-info{
+    padding-top: 18px;
+
+
+}
+
+
+.contain .cards .card .c-info h1{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+   padding-bottom: 32px;
+
+    
+}
+.contain .cards .card .c-info .detail{
+  display: flex;
+   flex-wrap: wrap;
+   flex: 2;
+}
+
+.contain .cards .card .c-info .detail p{
+    font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(147, 140, 140, 1);
+  width: 50%;
+  padding-bottom: 18px;
+  
+}
+.contain .cards .card .c-info .detail p span{
+
+   color: #000000;
+
+
+}
+.contain .cards .card button{
+    margin-top: 14px;
+    background: #282828;
+    border-radius: 4px;
+    height: 40px;
+    width: 241px;
+    border-radius: 4px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+footer{
+    height: 213px;
+    min-width: 100%;
+    background: rgba(40, 40, 40, 1);
+    padding: 40px 120px;
+    min-height: max-content;
+    display: flex;
+    flex-direction: column;
+   
+    
+}
+
+footer .fmenu{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+   
+    
+}
+
+footer .fmenu  ul  {
+    list-style: none;
+
+}
+footer .fmenu ul li   {
+    padding-bottom: 8px;
+}
+footer .fmenu ul li h1 {
+ 
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+color: #FFFFFF;
+
+}
+footer .fmenu ul li a{
+    text-decoration: none;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+   color:  rgba(255, 255, 255, 1);
+ 
+}
+
+
+footer .f-end{
+    padding-top: 25px;
+    display: flex;
+    
+  
+}
+footer .f-end img{
+height: 16px;
+width: 350px;
+
+
+}
+footer .f-end .line{
+    width: 757px;
+    border-bottom: 1px solid white;
+    margin-bottom: 8px;
+    margin-left: 16px;
+  }
+
+  @media( max-width:1366px){
+ 
+    nav{
+        justify-content: space-between;
+    }
+    nav ul{
+       
+        margin-left: 200px;
+       
+    }
+}
+
+@media( max-width:1268px){
+ nav ul{
+       
+        margin-left: 120px;
+       
+    }
+
+nav ul li{
+    margin: 0 13px;
+}
+
+nav .log{
+    padding-left:30px ;
+}
+
+nav .log a{
+
+  padding-right: 10px;
+}
+
+
+nav .lan{
+    padding-top: 4px;
+    padding-left: 30px;
+  
+}
+
+
+}
+
+@media( max-width:1051px){
+ nav ul{
+       
+        margin-left: 90px;
+       
+    }
+    nav ul li{
+    margin: 0 13px;
+}
+
+nav .log{
+    padding-left:50px ;
+}
+
+nav .log a{
+
+  padding-right: 20px;
+}
+
+
+nav .lan{
+    padding-top: 4px;
+    padding-left: 30px;
+  
+}
+}
+
+
+
+
+
+
+
+
+

@@ -229,11 +229,12 @@ color: #282828;
 
 
 
-footer{
+ footer{
     height: 213px;
     min-width: 100%;
     background: rgba(40, 40, 40, 1);
-    padding: 40px 120px;
+    padding: 32px 120px;
+    min-height: max-content;
     display: flex;
     flex-direction: column;
    
@@ -251,6 +252,7 @@ footer .fmenu{
 
 footer .fmenu  ul  {
     list-style: none;
+   
 
 }
 footer .fmenu ul li   {
@@ -280,19 +282,22 @@ footer .f-end{
     
   
 }
-footer .f-end img{
-height: 16px;
-width: 350px;
-
-
-}
-footer .f-end .line{
-    width: 757px;
-    border-bottom: 1px solid white;
-    margin-bottom: 8px;
-    margin-left: 16px;
-  }
-
+footer .f-end p{
+    width: 379px;
+    height: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    
+    
+    }
+    footer .f-end .line{
+        width: 731px;
+        border-bottom: 1px solid white;
+        margin-bottom: 12px;
+        margin-left: 16px;
+      }
 
 
   @media( max-width:1366px){
@@ -346,10 +351,7 @@ footer{
 }
 @media( max-width:630px){
    
-    footer .f-end img{
-        width: 300px;
-       
-   }
+   
    footer{
    
 
@@ -363,10 +365,7 @@ footer .fmenu  ul  {
 }
 @media( max-width:471px){
 
-    footer .f-end img{
-        width: 200px;
-       
-   }
+  
    .find .type ul li{
     
     padding: 0 8px ;

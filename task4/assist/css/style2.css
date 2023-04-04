@@ -374,7 +374,7 @@ footer{
     height: 213px;
     min-width: 100%;
     background: rgba(40, 40, 40, 1);
-    padding: 40px 120px;
+    padding: 32px 120px;
     min-height: max-content;
     display: flex;
     flex-direction: column;
@@ -393,6 +393,7 @@ footer .fmenu{
 
 footer .fmenu  ul  {
     list-style: none;
+   
 
 }
 footer .fmenu ul li   {
@@ -422,103 +423,126 @@ footer .f-end{
     
   
 }
-footer .f-end img{
-height: 16px;
-width: 350px;
+footer .f-end p{
+    width: 379px;
+    height: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    
+    
+    }
+    footer .f-end .line{
+        width: 731px;
+        border-bottom: 1px solid white;
+        margin-bottom: 12px;
+        margin-left: 16px;
+      }
 
 
-}
-footer .f-end .line{
-    width: 757px;
-    border-bottom: 1px solid white;
-    margin-bottom: 8px;
-    margin-left: 16px;
-  }
 
-  @media( max-width:1366px){
+      @media( max-width:1366px){
  
-    nav{
-        justify-content: space-between;
+        nav{
+            justify-content: space-between;
+        }
+        nav ul{
+           
+            margin-left: 90px;
+           
+        }
     }
-    nav ul{
-       
-        margin-left: 90px;
-       
-    }
-}
-
-@media( max-width:1268px){
- nav ul{
-       
-        margin-left: 50px;
-       
-    }
-
-nav ul li{
-    margin: 0 9px;
-}
-
-nav .log{
-    padding-left:15px ;
-}
-
-nav .log a{
-
-  padding-right: 5px;
-}
-
-
-nav .lan{
-    padding-top: 4px;
-    padding-left: 20px;
-  
-}
-
-
-}
-
-@media( max-width:1051px){
     
- 
-footer{
-    height: max-content;
-}
-}
-@media( max-width:630px){
-    .contain .find .search-box{
-       
-        width: 500px ;
-       
+    @media( max-width:1268px){
+     nav ul{
+           
+            margin-left: 50px;
+           
+        }
+    
+    nav ul li{
+        margin: 0 9px;
     }
-    footer .f-end img{
-        width: 300px;
-       
-   }
-   footer{
-   
-
-    padding: 40px 70px;
     
-}
-footer .fmenu  ul  {
-    list-style: none;
-    padding: 10px 20px;
-}
-}
-@media( max-width:471px){
-    .contain .find .search-box{
-        
-        width: 300px ;
-    
+    nav .log{
+        padding-left:15px ;
     }
-    footer .f-end img{
-        width: 200px;
-       
-   }
-   .find .type ul li{
     
-    padding: 0 8px ;
-  
-}
-   }
+    nav .log a{
+    
+      padding-right: 5px;
+    }
+    
+    
+    nav .lan{
+        padding-top: 4px;
+        padding-left: 20px;
       
+    }
+    
+    
+    }
+    
+    @media( max-width:1051px){
+        
+     
+    footer{
+        height: max-content;
+    }
+    }
+    @media( max-width:630px){
+        .contain .find .search-box{
+           
+            width: 500px ;
+           
+        }
+      
+       footer{
+       
+    
+        padding: 40px 70px;
+        
+    }
+    footer .fmenu  ul  {
+        list-style: none;
+        padding: 10px 20px;
+    }
+    }
+    @media( max-width:471px){
+        .contain .find .search-box{
+            
+            width: 300px ;
+        
+        }
+       
+       .find .type ul li{
+        
+        padding: 0 8px ;
+      
+    }
+       }
+          
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+         
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

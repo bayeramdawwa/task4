@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Montserrat';
     
 
 }
@@ -27,7 +27,7 @@ nav{
 nav ul{
     list-style: none;
     display: flex;
-    margin-left: 298px;
+    margin-left: 226px;
     padding-top: 4px;
 }
 nav ul li{
@@ -36,7 +36,6 @@ nav ul li{
 }
  nav ul li a{
     text-decoration: none;
-    font-family: 'Montserrat';
     margin: auto;
     font-style: normal;
     text-decoration: none;
@@ -78,8 +77,6 @@ nav ul li .arow2{
     
 }
 nav ul li .jop li{
-
-    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -113,7 +110,6 @@ nav .log{
 nav .log a{
   text-decoration: none;
   padding-right: 32px;
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;;
@@ -128,13 +124,11 @@ nav .log a:hover{
 
 nav .lan{
     padding-top: 4px;
-    padding-left: 47px;
+    padding-left: 15px;
     display: flex;
 }
 nav .lan a{
 text-decoration: none;
-
-font-family: 'Montserrat';
 font-style: normal;
 font-weight: 400;
 font-size: 12px;
@@ -159,7 +153,6 @@ nav .lan a:hover{
    flex-wrap: wrap;
    align-items: center;
     justify-content: center;
-
     background-image: url(../img/backimg.png) ;
     background-repeat: no-repeat;
     background-size:cover;
@@ -177,7 +170,6 @@ nav .lan a:hover{
 .find h1{
    width: 108px;
    height: 29px;
-   font-family: 'Montserrat';
    font-style: normal;
    font-weight: 700;
    font-size: 24px;
@@ -200,7 +192,6 @@ nav .lan a:hover{
 }
 
 .contain .find .p p{
-font-family: 'Montserrat';
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
@@ -213,8 +204,6 @@ color: #000000;
 .contain .find .search-box{
     padding-top: 30px;
     position: relative;
-    align-items: center;
-    justify-content: center;
     background: none;
     width: 600px ;
     height: 65px;
@@ -229,8 +218,6 @@ color: #000000;
     border: none;
     border-bottom: 1px solid black;
     background: none;
-   
-     font-family: Montserrat;
      font-size: 16px;
      font-weight: 400;
      color: #938C8C;
@@ -269,7 +256,6 @@ color: #000000;
 
 }
 .find .type ul li{
-font-family: 'Montserrat';
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
@@ -355,7 +341,6 @@ padding: 0 16px ;
 }
 
 .contain .cards .card .c-info p{
-    font-family: Montserrat;
   font-size: 12px;
   font-weight: 400;
   color: rgba(147, 140, 140, 1);
@@ -380,15 +365,14 @@ padding-right: 2px;
 
 .contain .cards .card .c-info .status p{
     color: rgba(113, 170, 39, 1);
-    font-family: Montserrat;
     font-size: 8px;
     font-weight: 400;
+    display: flex;
+
     
    
 }
 .contain .cards .card .c-info .status span{
-  
-font-family: 'Montserrat';
 font-style: normal;
 font-weight: 400;
 font-size: 8px;
@@ -399,10 +383,10 @@ color: #938C8C;
 
 }
 .contain .cards .card .c-info .status .s1{
-    margin-left:  134px;
+    margin-left:  120px;
 }
 .contain .cards .card .c-info .status .s2{
-    padding-left: 8px;
+    padding-left: 6px;
 }
 
 .contain .cards .card button{
@@ -412,7 +396,6 @@ color: #938C8C;
     height: 40px;
     width: 241px;
     border-radius: 4px;
-    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -425,7 +408,7 @@ footer{
     min-width: 100%;
     background: rgba(40, 40, 40, 1);
     padding: 40px 120px;
-    min-height: max-content;
+  
     
 }
 
@@ -444,10 +427,9 @@ footer .fmenu  ul  {
 }
 footer .fmenu ul li   {
     padding-bottom: 8px;
+
 }
 footer .fmenu ul li h1 {
- 
-font-family: 'Montserrat';
 font-style: normal;
 font-weight: 700;
 font-size: 24px;
@@ -457,7 +439,6 @@ color: #FFFFFF;
 }
 footer .fmenu ul li a{
     text-decoration: none;
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -475,7 +456,6 @@ footer .f-end{
 footer .f-end img{
 width: 379px;
 height: 24px;
-font-family: 'Montserrat';
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
@@ -496,7 +476,7 @@ footer .f-end .line{
     }
     nav ul{
        
-        margin-left: 200px;
+        margin-left: 90px;
        
     }
 }
@@ -504,27 +484,27 @@ footer .f-end .line{
 @media( max-width:1268px){
  nav ul{
        
-        margin-left: 120px;
+        margin-left: 50px;
        
     }
 
 nav ul li{
-    margin: 0 13px;
+    margin: 0 9px;
 }
 
 nav .log{
-    padding-left:30px ;
+    padding-left:15px ;
 }
 
 nav .log a{
 
-  padding-right: 10px;
+  padding-right: 5px;
 }
 
 
 nav .lan{
     padding-top: 4px;
-    padding-left: 30px;
+    padding-left: 20px;
   
 }
 
@@ -532,31 +512,62 @@ nav .lan{
 }
 
 @media( max-width:1051px){
- nav ul{
+    
+ 
+footer{
+    height: max-content;
+}
+}
+@media( max-width:630px){
+    .contain .find .search-box{
        
-        margin-left: 90px;
+        width: 500px ;
        
     }
-    nav ul li{
-    margin: 0 13px;
+    footer .f-end img{
+        width: 300px;
+       
+   }
+   footer{
+   
+
+    padding: 40px 70px;
+    
 }
-
-nav .log{
-    padding-left:50px ;
+footer .fmenu  ul  {
+    list-style: none;
+    padding: 10px 20px;
 }
-
-nav .log a{
-
-  padding-right: 20px;
 }
-
-
-nav .lan{
-    padding-top: 4px;
-    padding-left: 30px;
+@media( max-width:471px){
+    .contain .find .search-box{
+        
+        width: 300px ;
+    
+    }
+    footer .f-end img{
+        width: 200px;
+       
+   }
+   .find .type ul li{
+    
+    padding: 0 8px ;
   
 }
-}
+   }
+      
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+     
+
 
 
 

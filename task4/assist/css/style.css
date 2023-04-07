@@ -23,7 +23,20 @@ nav{
    margin-bottom:44px;
    width: 100%;
 }
+nav .logo:hover{
+    animation-duration: 3s;
+    animation-name: logo;
+    cursor: pointer;
+    
+}
+@keyframes logo{
+    0% {transform: rotate(0);}
+    40%{transform: rotate(20deg);}
+    80%{transform: rotate(-20deg);}
+    100%{transform: rotate(0deg);}
 
+    
+}
 nav .nav-menu{
     list-style: none;
     display: flex;
@@ -69,24 +82,13 @@ nav .nav-menu li{
 
 
  nav .nav-menu li  .jop {
-    position: absolute;
-    left: -94px;
-    top: 30px ;
-    background: rgba(40, 40, 40, 1);
-    height: 44px;
-    border-radius: 8px;
-    padding: 12px 32px 12px 32px;
-    width: 578px;
-    margin-left: 0;
-    list-style: none;
+   
     display: none;
    
    
 }
 nav .nav-menu li .arow2{
-    position: absolute;
-    left: 6px;
-    top: 17px;
+  
     display: none;
     
 }
@@ -110,11 +112,24 @@ nav .nav-menu li .jop li:hover a{
 }
 nav .nav-menu li:hover > .jop{
    display: flex;
+   position: absolute;
    transition-delay: 1s;
+   left: -94px;
+    top: 30px ;
+    background: rgba(40, 40, 40, 1);
+    height: 44px;
+    border-radius: 8px;
+    padding: 12px 32px 12px 32px;
+    width: 578px;
+    margin-left: 0;
+    list-style: none;
    
 }
 nav .nav-menu li:hover > .arow2{
     display: block;
+    position: absolute;
+    left: 6px;
+    top: 17px;
     
  }
 nav .log{
@@ -165,6 +180,124 @@ nav .lan a:hover{
 nav .lan:hover  p {
     color:#FF8500 ;
 }
+
+  nav .menuside{
+    display: none;
+  }
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    align-items: center;
+  }
+  
+  .sidenav .nav-menu2{
+    list-style: none;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .sidenav .nav-menu2 li{
+    list-style: none;
+    padding: 10px 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidenav .nav-menu2 li a{
+    text-decoration: none;
+    margin: auto;
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: #938C8C;
+  }
+  .sidenav .nav-menu2 li a:hover{
+    color: #282828;
+    
+ }
+
+ .sidenav .nav-menu2 li a .arow{
+    margin:0 0  0 4px ;
+    width: 15px;
+ }
+ .sidenav .nav-menu2 li a .arow-black{
+    display: none;
+    width: 15px;
+ }
+
+ .sidenav .nav-menu2 li:hover .arow{
+    display: none;
+
+     
+ }
+ .sidenav .nav-menu2 li:hover .arow-black{
+    display: initial;
+    margin:0 0  0 4px ;
+ }
+ .sidenav .nav-menu2 li  .jop {
+   
+    display: none;
+  
+}
+
+.sidenav .nav-menu2 li .jop li:hover a{
+    color: #FF8500;
+    border-bottom: 1px solid #FF8500;
+    
+
+}
+
+
+.sidenav .nav-menu2 li:hover > .jop{
+    display: flex;
+    flex-direction: column;
+    transition-delay: 1s;
+     background: rgba(40, 40, 40, 1);
+     border-radius: 8px;
+     padding: 12px 10px 5px 10px;
+     margin-top: 10px;
+     list-style: none;
+     animation-duration: 1s;
+     animation-name: jopgo;
+    
+ }
+ @keyframes jopgo{
+    from{
+        margin-left:300px;
+    }
+    to{
+        margin-left: 0;
+    }
+ }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    text-decoration: none;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  
+
+
 
 .contain{
    display: flex;
@@ -298,7 +431,7 @@ display: flex;
 }
 .find .type ul li .line{
     width: 0;
-    border-bottom: 2px solid #FF8500;
+    border-bottom: 3px solid #FF8500;
     position: absolute;
     right: 0;
     left: 0;
@@ -310,11 +443,21 @@ display: flex;
 .find .type ul li:hover .line{
     width: 50%;
     display: block;
+    animation-duration: 2s;
+    animation-name: line;
 
 
 }
 
+@keyframes line{
+    from{
+        width: 0;
+    }
+    to{
+        width: 50%;
+    }
 
+}
 
 .contain .cards{
     margin-top: 33px;
@@ -332,10 +475,9 @@ display: flex;
     width: 305px;
     border-radius: 10px;
     background: rgba(255, 255, 255, 1);
-    padding: 18px 32px 18px 32px;
+    padding: 26px 32px 18px 32px;
     box-shadow: 0px 4px 20px 0px rgba(40, 40, 40, 0.15);
-    margin: 0 50px;
-    margin-bottom: 70px;
+   margin: 0 50px 70px 50px;
 
 
 }
@@ -343,19 +485,18 @@ display: flex;
     display: flex;
     height: 36px;
     align-items: flex-end;
-     width: 100%;
+    width: 100%;
     position: relative;
+
 }
 .contain .cards .card .head img{
-    height: 36px;
-    width: 36px;
+
     padding-right: 8px;
 }
 
 
 .contain .cards .card .head .arthur{
     height: 24px;
-   font-family: Montserrat;
      font-size: 10px;
         font-weight: 500;
         align-items: center;
@@ -363,19 +504,19 @@ display: flex;
 }
 .contain .cards .card .head .view{
     height: 19px;
-    font-family: Montserrat;
+
      font-size: 8px;
     font-weight: 400; 
     position: absolute;
-    top: 45%;
+    top: 14px;
     right: 0;
+    color: #938C8C;   
 }
 
 .contain .cards .card .c-info{
     padding-top: 18px;
 }
 .contain .cards .card .c-info h1{
-    font-family: Montserrat;
     font-size: 16px;
     font-weight: 500;
    padding-bottom: 32px;
@@ -386,8 +527,9 @@ display: flex;
 .contain .cards .card .c-info p{
   font-size: 12px;
   font-weight: 400;
+  height: 16px;
   color: rgba(147, 140, 140, 1);
-  padding-bottom: 18px;
+  margin-bottom:18px;
 }
 
 .contain .cards .card .c-info span{
@@ -396,13 +538,16 @@ display: flex;
 }
 .contain .cards .card .c-info .status{
     display: flex;
-    padding-top: 6px;
-    padding-bottom: 18px;
+    padding-top: 12px;
+    height: 19px;
+    padding-bottom: 22px;
+    align-items: center;
 
 }
 .contain .cards .card .c-info .status img{
 
 padding-right: 2px;
+height: 4px;
 
 }
 
@@ -410,7 +555,10 @@ padding-right: 2px;
     color: rgba(113, 170, 39, 1);
     font-size: 8px;
     font-weight: 400;
+    
     display: flex;
+    align-items: center;
+    margin-bottom: 0;
 
     
    
@@ -419,8 +567,8 @@ padding-right: 2px;
 
 font-style: normal;
 font-weight: 400;
-font-size: 12px;
-line-height: 16px;
+font-size: 8px;
+
 
 
 color: #000000;
@@ -432,12 +580,11 @@ color: #000000;
 
 }
 .contain .cards .card .c-info .status .s1{
-    margin-left:  120px;
+    margin-left:  121px;
 
 font-style: normal;
 font-weight: 400;
 font-size: 8px;
-line-height: 19px;
 color: #938C8C;
 
 
@@ -447,14 +594,12 @@ color: #938C8C;
     font-style: normal;
 font-weight: 400;
 font-size: 8px;
-line-height: 19px;
 color: #938C8C;
 }
 
 .contain .cards .card button{
 
     background: #282828;
-    border-radius: 4px;
     height: 40px;
     width: 241px;
     border-radius: 4px;
@@ -534,103 +679,176 @@ footer .f-end p{
         margin-bottom: 12px;
         margin-left: 16px;
       }
-  @media( max-width:1366px){
+      @media( max-width:2560px){
  
-    nav{
-        justify-content: space-between;
-    }
-    nav ul{
-       
-        margin-left: 90px;
-       
-    }
-}
 
-@media( max-width:1268px){
- nav ul{
-       
-        margin-left: 50px;
-       
-    }
-
-nav ul li{
-    margin: 0 9px;
-}
-
-nav .log{
-    padding-left:15px ;
-}
-
-nav .log a{
-
-  padding-right: 5px;
-}
-
-
-nav .lan{
-    padding-top: 4px;
-    padding-left: 20px;
-  
-}
-
-
-}
-
-@media( max-width:1051px){
-    
- 
-footer{
-    height: max-content;
-}
-}
-@media( max-width:630px){
-    .contain .find .search-box{
-       
-        width: 500px ;
-       
-    }
-  
-   footer{
-   
-
-    padding: 40px 70px;
-    
-}
-footer .fmenu  ul  {
-    list-style: none;
-    padding: 10px 20px;
-}
-}
-@media( max-width:471px){
-    .contain .find .search-box{
+        nav {
+           
+            justify-content: space-between;
         
-        width: 300px ;
-    
+        }
+      
+    }
+  @media( max-width:1365px){
+ 
+
+    nav .nav-menu{
+       
+        margin-left: 100px;
+       
+    }
+    footer .f-end .line{
+        width: 60%;
+        border-bottom: 1px solid white;
+        margin-bottom: 12px;
+        margin-left: 16px;
+      }
+}
+@media( max-width:1213px){
+ 
+    nav .nav-menu{
+       
+        margin: 0 30px;
+       
+    }
+    nav .nav-menu li{
+        margin: 0 10px;
+    }
+
+    nav .log{
+       
+        padding-left: 20px ;
+       
+    }
+    nav .log a{
+        padding-right: 20px;
+    }
+
+    nav .lan{
+        padding-left: 5px;
+    }
+    footer .f-end .line{
+        width: 40%;
+        border-bottom: 1px solid white;
+        margin-bottom: 12px;
+        margin-left: 16px;
+      }
+}
+
+@media( max-width:1071px){
+    nav{
+        justify-content:flex-start;
+     }
+     nav .nav-menu{
+        display: none;
+     }
+     nav .menuside{
+        display: block;
+        position: fixed;
+        right: 33px;
+      }
+    nav .log{
+       
+        padding-left: 50px ;
+       
+    }
+    nav .log a{
+        padding-right: 20px;
+    }
+
+    nav .lan{
+        padding-left: 20px;
+    }
+
+    footer{
+        align-items: center;
+        height: max-content;
+        padding: 32px 70px;
     }
    
-   .find .type ul li{
-    
-    padding: 0 8px ;
-  
+    footer .f-end .line{
+       display: none;
+      }
+      footer .fmenu ul   {
+       padding: 10px 10px 10px 10px;
+    }
+
 }
-   }
-      
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-     
+@media( max-width:607px){
+    nav .log{
+       
+        padding-left:20px ;
+       
+    }
+    nav .log a{
+        padding-right: 10px;
+    }
 
+    nav .lan{
+        padding-left: 10px;
+    }
 
+    .contain .find .search-box{
+       
+        width: 300px ;
+       
+    
+    }
+    .contain .find .type ul{
+       
+        display: block;
+       
+    
+    }
+    .contain .find .type ul li{
+       
+        padding-bottom: 10px;
+       
+    
+    }
+    footer{
+        align-items: center;
+        height: max-content;
+        padding: 32px 20px;
+    }
 
+}
+@media( max-width:413px){
+    nav .log{
+       
+        padding-left:10px ;
+       
+    }
+    nav .log a{
+        padding-right: 7px;
+    }
 
+    nav .lan{
+        padding-left: 7px;
+    }
 
+    .contain .find .search-box{
+       
+        width: 250px ;
+       
+    
+    }
+    footer{
+        align-items: center;
+        height: max-content;
+        padding: 32px 0px;
+    }
+
+    footer .f-end p{
+        width: 200px;
+        font-size: 10px;
+       
+        
+        
+        }
+    
+
+}
 
 
 
